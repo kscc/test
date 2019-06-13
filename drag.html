@@ -13,6 +13,9 @@
 		var obj = document.getElementById(id)
 		var disX = 0;
 		var disY = 0;
+		obj.onmousedown = function(ev){
+			obj.style.left = ev.pageX - obj.offsetLeft;
+		}
 	}
 </script>
 </body>
